@@ -1,0 +1,68 @@
+---
+
+seteo_actual: [ basico_1 ]
+seteo_actual: [ basico_1, basico_2 ]
+
+seteos:
+  basico_1:
+    ruta_imagenes: './images_test/'
+    ruta_archivo_pdf: './renders/basico_1_test.pdf'
+    imagenes_a_ignorar:
+      - 07.gif
+    #imagenes_a_utilizar: []
+
+    ajustes:
+      paleta: gris
+      paleta: rgb
+      #paleta: bn
+      niveles: {negro: 0, blanco: 1, gama: 1}
+      redimensionar: {medida: a4, encajar: True, margen: [10, 10]}
+
+    orden: 09-az
+    #orden: za-90
+    dpi: 300
+
+    metadatos:
+      "/Author": "Colectivo BlaBleBliBloBlu."
+      "/Producer": "Administración"
+      "/Keywords": "Prueba, Test"
+      "/Subject": 'Prueba de funcionamiento.'
+      "/Title": 'Testeo de Imagenes a PDF'
+
+  basico_2:
+    ruta_imagenes: './images_test/'
+    ruta_archivo_pdf: './renders/basico_2_test.pdf'
+    imagenes_a_ignorar: []
+    imagenes_a_utilizar:
+      - 01.png
+      - 02.jpg
+      - 07.gif
+
+    ajustes:
+      paleta: gris
+      paleta: rgb
+      #paleta: bn
+      niveles: {negro: 0, blanco: 1, gama: 1}
+      redimensionar: {medida: a4, encajar: True, margen: [10, 10]}
+
+    orden: 09-az
+    #orden: za-90
+    dpi: 300
+
+    metadatos:
+      "/Author": "Colectivo BlaBleBliBloBlu."
+      "/Producer": "Administración"
+      "/Keywords": "Prueba, Test"
+      "/Subject": 'Prueba de funcionamiento.'
+      "/Title": 'Testeo de Imagenes a PDF'
+
+
+general:
+  tipos_de_imagenes_permitidos: ['jpg', 'jpeg', 'png', 'gif', 'webp', '_svg']
+
+  medidas:
+    a4: [210, 297]
+    legal: [215.9, 355.6]
+
+  compresion_jpg: ['jpeg2000', 60]
+  color_pagina: '#fff'

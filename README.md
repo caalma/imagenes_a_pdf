@@ -11,7 +11,6 @@
 + python3
   + pypdf2
   + wand
-  + pillow
 
 ## Falta
 + Verificar la medida de página del pdf no se ajusta a lo esperado.

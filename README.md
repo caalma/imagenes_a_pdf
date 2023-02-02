@@ -2,9 +2,9 @@
 
 > Utilidad para componer múltiples imágenes en un documento pdf.
 
-## Instalaciòn
+## Instalación
 Con el siguiente paso se crearán accesos directos o shortcut al ejecutable correspondiente. Soporta sistemas operativos Linux y Windows.
-1. Ejecutar `instalar.py`
+1. Ejecutar `instalar.py`.
 
 ## Modo de uso
 1. Configurar rutas y seteos dentro de `cfg.yml`.

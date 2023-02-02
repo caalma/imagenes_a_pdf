@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 # -*- coding:utf-8 -*-
 
-from os import listdir, makedirs, remove
-from os.path import exists, splitext, basename, realpath
+from os import listdir, makedirs, remove, chdir
+from os.path import exists, splitext, basename, realpath, dirname
 from shutil import rmtree
 from sys import argv
 from PyPDF2 import PdfMerger, PdfReader, PdfWriter
@@ -250,6 +250,10 @@ def multiimagen_a_pdf(seteo, general):
     return True
 
 if __name__ == '__main__':
+    # mueve la ejecución al directorio del script
+    chdir(dirname(__file__))
+
+    print('IMÁGENES A PDF\nProcesando tu conversión ...')
     try:
         control = ''
         with open('cfg.yml', 'r') as f:
@@ -276,3 +280,5 @@ if __name__ == '__main__':
 
     if True:
         mostrar_notificaciones()
+
+    print('Conversión finalizada!')

@@ -39,6 +39,9 @@ setx PYTHONIOENCODING "utf-8"
 setx PYTHONUTF8 "1"
 ```
 
++ https://stackoverflow.com/questions/53268792/create-shortcut-files-in-windows-10-using-python-3-7-1
+
+
 ### GENERAL
 
 + https://gist.github.com/embayer/2774afb51b188dc53ed8
